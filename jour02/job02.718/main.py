@@ -35,7 +35,6 @@ class Auteur(Personne):
 
 jk = ['Harry Potter à l\'école des sorciers','Harry Potter et la chambre des secrets']
 
-
 p1 = Auteur("Rowling","J.K")
 
 # à revoir
@@ -43,15 +42,6 @@ titre = p1.ecrireUnLivre("Harry Potter et le prisonnier d'Azkaban")
 p2 = Livre(titre)
 p1.set_oeuvre(titre)
 p1.listerOeuvre()
-
-
-# p2.p1 = p1
-# p1.display()
-# p2.print()
-# p1.p2 = p2
-# p2.display()
-# p1.display()
-
 
 
 

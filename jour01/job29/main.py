@@ -1,33 +1,24 @@
-triangleSide1 = '      /\ '
-triangleSide2 = '     /  \ '
-triangleSide3 = '    /    \ '
-triangleSide4 = '   /      \ '
-triangleSide5 = '  /        \ '
-triangleSide6 = ' /__________\ '
+def draw_triangle(height):
 
+    leftLine = '/'
+    rightLine = "\\"
+    horizontalLine = '_'
 
-def draw_triangle(x):
-    a = 0
-    while a < 6:
-        a+=1
+    a = 10
+    c = 0
+    while a > height:
+        
+        space  = ' '
+        rightSide = (space*c) + rightLine
+        c+=2
 
-        if a == 1:
-            print(triangleSide1)
-            continue
-        elif a == 2:
-            print(triangleSide2)
-            continue
-        elif a == 3:
-            print(triangleSide3)
-            continue
-        elif a == 4:
-            print(triangleSide4)
-            continue
-        elif a == 5:
-            print(triangleSide5)
-            continue
-        elif a == 6:
-            print(triangleSide6)
-            continue
+        a-=1
+        leftSide = (space*a) + leftLine 
 
+        if a == height:
+            print(leftSide+horizontalLine*8+rightLine)
+        else:
+            print(leftSide+rightSide)
+
+    
 draw_triangle(5)
