@@ -4,7 +4,7 @@ def program():
     nbr = int(input('Entrez un nombre entier '))
     doc = open('../job02/data.txt','r')
     a = doc.readline()
-    x = re.findall(r"([a-zA-z]{1,})", a)
+    x = re.findall(r"([a-zA-Z]{1,})", a)
 
     compteur = 0
 
